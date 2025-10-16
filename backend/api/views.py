@@ -6,6 +6,9 @@ from .serializers import LoginSerializer, UserSerializer
 
 
 class LoginView(generics.GenericAPIView):
+    """
+    Представление для обработки входа пользователя.
+    """
     permission_classes = (AllowAny, )
     serializer_class = LoginSerializer
 
