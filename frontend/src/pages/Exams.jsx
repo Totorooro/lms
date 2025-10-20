@@ -1,13 +1,12 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar'; 
-import '../styles/Home.css'; 
 
-function Home() {
+function Exams() {
   return (
-    <div className="home-container">
+    <div>
       <Sidebar />
     </div>
   );
 }
 
-export default Home;
+export default Exams;
