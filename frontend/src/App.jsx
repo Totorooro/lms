@@ -12,11 +12,6 @@ import Tasks from "./pages/Tasks";
 import Grades from "./pages/Grades";
 import Notifications from "./pages/Notifications";
 
-function Logout() {
-  localStorage.clear()
-  return <Navigate to="/login" />
-}
-
 function App() {
   return (
     <BrowserRouter>
@@ -30,7 +25,6 @@ function App() {
         <Route path="/grades" element={<ProtectedRoute><Grades /></ProtectedRoute>} />
         <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
         <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

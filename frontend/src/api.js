@@ -8,7 +8,7 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem(ACCESS_TOKEN);
-    if (token && !config.url.includes('/api/login/') && !config.url.includes('/api/token/refresh/')) {
+    if (token && !config.url.includes('/api/login/') && !config.url.includes('/api/token/refresh/') && !config.url.includes('/api/logout/')) {
       config.headers.Authorization = `Bearer ${token}`;
     }
     return config;

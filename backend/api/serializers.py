@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import User
 from django.contrib.auth import authenticate
+from rest_framework_simplejwt.serializers import TokenBlacklistSerializer
 
 from rest_framework import serializers
 
@@ -27,3 +28,10 @@ class LoginSerializer(serializers.Serializer):
             return user
         
         raise serializers.ValidationError("Неверные учётные данные")
+
+
+class LogoutSerializer(TokenBlacklistSerializer):
+    """
+    Сериализатор для logout.
+    """
+    pass 

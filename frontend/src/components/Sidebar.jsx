@@ -1,8 +1,24 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import api from '../api';
+import { REFRESH_TOKEN } from '../constants';
 import '../styles/Sidebar.css'; 
 
 function Sidebar() {
+  const navigate = useNavigate();  
+
+  const handleLogout = async () => {
+    const refresh = localStorage.getItem(REFRESH_TOKEN);
+    if (refresh) {
+      try {
+        await api.post('/api/logout/', { refresh });  
+      } catch (error) {
+        console.error('Logout error:', error);  
+      }
+    }
+    localStorage.clear();  
+    navigate('/login');  
+  };
   return (
     <div className="sidebar">
       <ul>
@@ -42,6 +58,9 @@ function Sidebar() {
           </NavLink>
         </li>
       </ul>
+      <button onClick={handleLogout} className="logout-button">
+        <img src="/images/icon-logout.png" className="logout-icon" alt="Выйти" /> Выйти
+      </button>
     </div>
   );
 }
