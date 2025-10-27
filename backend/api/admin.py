@@ -4,8 +4,8 @@ from .models import User
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ["id", "first_name", "last_name", "username", "email", "role", "group", "direction", "is_active", "is_staff", "is_superuser"]
-    fields = ["first_name", "last_name", "username", "email", "role", "group", "direction"]
+    list_display = ["id", "first_name", "last_name", "username", "email", "role", "group", "is_active", "is_staff", "is_superuser"]
+    fields = ["first_name", "last_name", "username", "email", "role", "group"]
     ordering = ["id"]
     list_per_page = 10
     search_fields = ["last_name"]
