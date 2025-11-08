@@ -7,3 +7,4 @@ class EventAdmin(admin.ModelAdmin):
     list_filter = ['status', 'type_status']
     search_fields = ['title']
     ordering = ['id']
+    filter_horizontal = ['groups']
