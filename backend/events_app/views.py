@@ -1,4 +1,3 @@
-# views.py
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
@@ -20,10 +19,8 @@ class EventViewSet(viewsets.ReadOnlyModelViewSet):
         if user_group:
             queryset = queryset.filter(Q(groups__pk__isnull=True) | Q(groups=user_group)).distinct()
         else:
-            # If user has no group (e.g., teacher or admin), show all events or adjust logic as needed
             queryset = queryset.filter(groups__pk__isnull=True)
         
-        # Update status for each event before returning
         for event in queryset:
             event.update_status()
         
