@@ -1,0 +1,106 @@
+[
+{
+  "model": "schedule_app.subject",
+  "pk": 1,
+  "fields": {
+    "name": "Математический анализ",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 2,
+  "fields": {
+    "name": "Иностранный язык",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 3,
+  "fields": {
+    "name": "Офисные ИТ",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 4,
+  "fields": {
+    "name": "История России",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 5,
+  "fields": {
+    "name": "Основы военной подготовки",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 6,
+  "fields": {
+    "name": "Линейная алгебра и аналитическая геометрия",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 7,
+  "fields": {
+    "name": "Волейбол",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 8,
+  "fields": {
+    "name": "Безопасность жизнидеятельности",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 9,
+  "fields": {
+    "name": "Основы российской государственности",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 10,
+  "fields": {
+    "name": "Русский язык и культура речи",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 11,
+  "fields": {
+    "name": "Информатика",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 12,
+  "fields": {
+    "name": "Популярные лекции",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.subject",
+  "pk": 13,
+  "fields": {
+    "name": "Введение в программирование",
+    "description": ""
+  }
+}
+]

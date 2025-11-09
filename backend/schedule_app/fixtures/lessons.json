@@ -1,0 +1,1067 @@
+[
+{
+  "model": "schedule_app.lesson",
+  "pk": 1,
+  "fields": {
+    "subject": 1,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 2,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 1,
+    "classroom": "4-411",
+    "teacher": "Журавлева О.Д.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 3,
+  "fields": {
+    "subject": 3,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 1,
+    "classroom": "1-319",
+    "teacher": "Тимонина Л.С.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 4,
+  "fields": {
+    "subject": 4,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Шимон И.Я.",
+    "group": 1,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 5,
+  "fields": {
+    "subject": 5,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Моталов Ю.Г.",
+    "group": 1,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 6,
+  "fields": {
+    "subject": 5,
+    "type": "lecture",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 1,
+    "classroom": "корпус 5а (конгресс-центр)",
+    "teacher": "Моталов Ю.Г.",
+    "group": 1,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 7,
+  "fields": {
+    "subject": 4,
+    "type": "seminar",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 1,
+    "classroom": "4-316",
+    "teacher": "Шимон И.Я.",
+    "group": 1,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 8,
+  "fields": {
+    "subject": 6,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 2,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 9,
+  "fields": {
+    "subject": 6,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 2,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 10,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 2,
+    "classroom": "с/к Олимп",
+    "teacher": "Белова Е.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 11,
+  "fields": {
+    "subject": 8,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 2,
+    "classroom": "1-120",
+    "teacher": "Тималина Е.Ю.",
+    "group": 1,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 12,
+  "fields": {
+    "subject": 9,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": "Ямщиков С.В.",
+    "group": 1,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 13,
+  "fields": {
+    "subject": 10,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "4-415",
+    "teacher": "Волощенко М.В.",
+    "group": 1,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 14,
+  "fields": {
+    "subject": 9,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 3,
+    "classroom": "4-318",
+    "teacher": "Ямщиков С.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 15,
+  "fields": {
+    "subject": 8,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 3,
+    "classroom": "2-103",
+    "teacher": "Тималина Е.Ю.",
+    "group": 1,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 16,
+  "fields": {
+    "subject": 10,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 3,
+    "classroom": "4-415",
+    "teacher": "Волощенко М.В.",
+    "group": 1,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 17,
+  "fields": {
+    "subject": 11,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 3,
+    "classroom": "1-216",
+    "teacher": "Бархатова И.А.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 18,
+  "fields": {
+    "subject": 12,
+    "type": "seminar",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": null,
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 19,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 4,
+    "classroom": "с/к Олимп",
+    "teacher": "Сандалова Т.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 20,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 4,
+    "classroom": "2-204",
+    "teacher": "Журавлева О.Д.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 21,
+  "fields": {
+    "subject": 1,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 5,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 22,
+  "fields": {
+    "subject": 13,
+    "type": "lecture",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 5,
+    "classroom": "4-315",
+    "teacher": "Беднякова Т.М.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 23,
+  "fields": {
+    "subject": 11,
+    "type": "lecture",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 5,
+    "classroom": "1-120",
+    "teacher": "Черемисина Е.Н.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 24,
+  "fields": {
+    "subject": 13,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 5,
+    "classroom": "4-222",
+    "teacher": "Беднякова Т.М.",
+    "group": 1,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 25,
+  "fields": {
+    "subject": 1,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 26,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 1,
+    "classroom": "4-411",
+    "teacher": "Журавлева О.Д.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 27,
+  "fields": {
+    "subject": 1,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 1,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 28,
+  "fields": {
+    "subject": 4,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Шимон И.Я.",
+    "group": 2,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 29,
+  "fields": {
+    "subject": 5,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Моталов Ю.Г.",
+    "group": 2,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 30,
+  "fields": {
+    "subject": 5,
+    "type": "lecture",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 1,
+    "classroom": "корпус 5а (конгресс-центр)",
+    "teacher": "Моталов Ю.Г.",
+    "group": 2,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 31,
+  "fields": {
+    "subject": 4,
+    "type": "seminar",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 1,
+    "classroom": "4-316",
+    "teacher": "Шимон И.Я.",
+    "group": 2,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 32,
+  "fields": {
+    "subject": 6,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 2,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 33,
+  "fields": {
+    "subject": 3,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 2,
+    "classroom": "1-425",
+    "teacher": "Возвышаева Н.А.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 34,
+  "fields": {
+    "subject": 6,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 2,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 35,
+  "fields": {
+    "subject": 8,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 2,
+    "classroom": "1-120",
+    "teacher": "Тималина Е.Ю.",
+    "group": 2,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 36,
+  "fields": {
+    "subject": 9,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": "Ямщиков С.В.",
+    "group": 2,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 37,
+  "fields": {
+    "subject": 10,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "4-415",
+    "teacher": "Волощенко М.В.",
+    "group": 2,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 38,
+  "fields": {
+    "subject": 9,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 3,
+    "classroom": "4-318",
+    "teacher": "Ямщиков С.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 39,
+  "fields": {
+    "subject": 8,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 3,
+    "classroom": "2-103",
+    "teacher": "Тималина Е.Ю.",
+    "group": 2,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 40,
+  "fields": {
+    "subject": 10,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 3,
+    "classroom": "4-415",
+    "teacher": "Волощенко М.В.",
+    "group": 2,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 41,
+  "fields": {
+    "subject": 12,
+    "type": "seminar",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": null,
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 42,
+  "fields": {
+    "subject": 11,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 4,
+    "classroom": "1-319",
+    "teacher": "Кондрашова Е.С.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 43,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 4,
+    "classroom": "2-204",
+    "teacher": "Журавлева О.Д.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 44,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 4,
+    "classroom": "с/к Олимп",
+    "teacher": "Белова Е.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 45,
+  "fields": {
+    "subject": 13,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 4,
+    "classroom": "1-414",
+    "teacher": "Андреев В.А.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 46,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 5,
+    "classroom": "с/к Олимп",
+    "teacher": "Сандалова Т.В.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 47,
+  "fields": {
+    "subject": 13,
+    "type": "lecture",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 5,
+    "classroom": "4-315",
+    "teacher": "Беднякова Т.М.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 48,
+  "fields": {
+    "subject": 11,
+    "type": "lecture",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 5,
+    "classroom": "1-120",
+    "teacher": "Черемисина Е.Н.",
+    "group": 2,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 49,
+  "fields": {
+    "subject": 1,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 50,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 1,
+    "classroom": "с/к Олимп",
+    "teacher": "Сандалова Т.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 51,
+  "fields": {
+    "subject": 3,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 1,
+    "classroom": "1-416",
+    "teacher": "Возвышаева Н.А.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 52,
+  "fields": {
+    "subject": 4,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-315",
+    "teacher": "Шимон И.Я.",
+    "group": 3,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 53,
+  "fields": {
+    "subject": 4,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 1,
+    "classroom": "4-316",
+    "teacher": "Шимон И.Я.",
+    "group": 3,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 54,
+  "fields": {
+    "subject": 5,
+    "type": "lecture",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 1,
+    "classroom": "корпус 5а (конгресс-центр)",
+    "teacher": "Моталов Ю.Г.",
+    "group": 3,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 55,
+  "fields": {
+    "subject": 6,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 2,
+    "classroom": "4-315",
+    "teacher": "Митина Т.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 56,
+  "fields": {
+    "subject": 7,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 2,
+    "classroom": "с/к Олимп",
+    "teacher": "Белова Е.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 58,
+  "fields": {
+    "subject": 5,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 2,
+    "classroom": "4-315",
+    "teacher": "Моталов Ю.Г.",
+    "group": 3,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 59,
+  "fields": {
+    "subject": 8,
+    "type": "lecture",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 2,
+    "classroom": "1-120",
+    "teacher": "Тималина Е.Ю.",
+    "group": 3,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 60,
+  "fields": {
+    "subject": 8,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 2,
+    "classroom": "2-103",
+    "teacher": "Тималина Е.Ю.",
+    "group": 3,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 61,
+  "fields": {
+    "subject": 9,
+    "type": "lecture",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": "Ямщиков С.В.",
+    "group": 3,
+    "week_type": "odd"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 62,
+  "fields": {
+    "subject": 10,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 3,
+    "classroom": "4-415",
+    "teacher": "Волощенко М.В.",
+    "group": 3,
+    "week_type": "even"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 63,
+  "fields": {
+    "subject": 6,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 3,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 64,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 3,
+    "classroom": "4-413",
+    "teacher": "Терлецкая И.Ю.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 65,
+  "fields": {
+    "subject": 12,
+    "type": "seminar",
+    "start_time": "16:10:00",
+    "end_time": "17:40:00",
+    "day": 3,
+    "classroom": "1-120",
+    "teacher": null,
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 66,
+  "fields": {
+    "subject": 11,
+    "type": "seminar",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 4,
+    "classroom": "1-319",
+    "teacher": "Кондрашова Е.С.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 67,
+  "fields": {
+    "subject": 9,
+    "type": "seminar",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 4,
+    "classroom": "4-317",
+    "teacher": "Король М.П.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 68,
+  "fields": {
+    "subject": 2,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 4,
+    "classroom": "4-417",
+    "teacher": "Терлецкая И.Ю.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 69,
+  "fields": {
+    "subject": 13,
+    "type": "seminar",
+    "start_time": "09:00:00",
+    "end_time": "10:30:00",
+    "day": 5,
+    "classroom": "1-415",
+    "teacher": "Андреев В.А.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 70,
+  "fields": {
+    "subject": 13,
+    "type": "lecture",
+    "start_time": "10:40:00",
+    "end_time": "12:10:00",
+    "day": 5,
+    "classroom": "4-315",
+    "teacher": "Беднякова Т.М.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 71,
+  "fields": {
+    "subject": 11,
+    "type": "lecture",
+    "start_time": "12:50:00",
+    "end_time": "14:20:00",
+    "day": 5,
+    "classroom": "1-120",
+    "teacher": "Черемисина Е.Н.",
+    "group": 3,
+    "week_type": "every"
+  }
+},
+{
+  "model": "schedule_app.lesson",
+  "pk": 72,
+  "fields": {
+    "subject": 1,
+    "type": "seminar",
+    "start_time": "14:30:00",
+    "end_time": "16:00:00",
+    "day": 5,
+    "classroom": "2-313",
+    "teacher": "Митина Т.В.",
+    "group": 3,
+    "week_type": "every"
+  }
+}
+]

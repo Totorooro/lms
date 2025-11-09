@@ -1,0 +1,29 @@
+[
+{
+  "model": "schedule_app.group",
+  "pk": 1,
+  "fields": {
+    "name": "1011",
+    "direction": "ИВТ",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.group",
+  "pk": 2,
+  "fields": {
+    "name": "1012",
+    "direction": "ИВТ",
+    "description": ""
+  }
+},
+{
+  "model": "schedule_app.group",
+  "pk": 3,
+  "fields": {
+    "name": "1013",
+    "direction": "ИВТ",
+    "description": ""
+  }
+}
+]

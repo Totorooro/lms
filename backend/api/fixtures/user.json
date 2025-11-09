@@ -1,0 +1,62 @@
+[
+{
+  "model": "api.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Nl9B6BYbZ6Amo3cNz1ozYo$CDleEr2OgluOtoTFEbs9kEJP9HfnakiEARUvYXpIsh0=",
+    "last_login": "2025-10-27T11:07:13.997Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "root@lms.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-10-27T11:02:02.867Z",
+    "role": "admin",
+    "group": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "api.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$5tWiuoi7Ylrm0jhPGv8gGm$HUQoCYd54SWZVaiRZyPjEoxnp/7fNzxGVynXwZqdI1Y=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sssss",
+    "first_name": "",
+    "last_name": "",
+    "email": "s@lms.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-04T16:12:22.346Z",
+    "role": "student",
+    "group": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "api.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$xIadZ4yPABRP1psFt0ZPi1$RnCJY9+KdXNA9mnKhXe6cn/16tlMxFor3f95H57ZX/8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ddddd",
+    "first_name": "",
+    "last_name": "",
+    "email": "d@lms.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-04T18:38:15.363Z",
+    "role": "student",
+    "group": 1,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
