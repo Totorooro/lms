@@ -1,8 +1,12 @@
 from django.db import models
+
+from schedule_app.models import Group
+
 from django.utils import timezone
 from datetime import datetime, time
 from schedule_app.models import Group
 from api.models import User 
+
 
 class Event(models.Model):
     STATUS_CHOICES = [
