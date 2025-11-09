@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from django.shortcuts import render
-
-# Create your views here.
-=======
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
@@ -52,4 +47,3 @@ class EventViewSet(viewsets.ReadOnlyModelViewSet):
         event.save()
         
         return Response({'detail': 'Успешно зарегистрировано'})
->>>>>>> 9df53b4cc22ac6cf660fc88c39f35d33284bf285

@@ -1,12 +1,12 @@
 from django.db import models
-<<<<<<< HEAD
+
 from schedule_app.models import Group
-=======
+
 from django.utils import timezone
 from datetime import datetime, time
 from schedule_app.models import Group
 from api.models import User 
->>>>>>> 9df53b4cc22ac6cf660fc88c39f35d33284bf285
+
 
 class Event(models.Model):
     STATUS_CHOICES = [
@@ -37,10 +37,7 @@ class Event(models.Model):
     participants_limit = models.PositiveIntegerField(default=0, verbose_name="Лимит участников") 
     current_participants = models.PositiveIntegerField(default=0, verbose_name="Текущие участники")
     groups = models.ManyToManyField(Group, blank=True, verbose_name="Группы")
-<<<<<<< HEAD
-=======
     participants = models.ManyToManyField(User, blank=True, related_name='registered_events', verbose_name="Участники") 
->>>>>>> 9df53b4cc22ac6cf660fc88c39f35d33284bf285
 
     class Meta:
         verbose_name = "Мероприятие"
@@ -53,9 +50,6 @@ class Event(models.Model):
     def progress(self):
         if self.participants_limit > 0:
             return f"{self.current_participants} / {self.participants_limit}"
-<<<<<<< HEAD
-        return None
-=======
         return None
 
     def update_status(self):
@@ -75,4 +69,3 @@ class Event(models.Model):
         self.save(update_fields=['status'])
 
     
->>>>>>> 9df53b4cc22ac6cf660fc88c39f35d33284bf285
