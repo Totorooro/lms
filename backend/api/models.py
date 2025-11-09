@@ -11,6 +11,8 @@ class User(AbstractUser):
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='student', verbose_name="Роль")
     group = models.ForeignKey(Group, on_delete=models.SET_NULL, null=True, blank=True, related_name='students', verbose_name="Группа")
     
+
+    
     class Meta:
         verbose_name = "Пользователь"
         verbose_name_plural = "Пользователи"

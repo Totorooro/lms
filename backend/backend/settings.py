@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'schedule_app',
     'events_app',
+    'teachers_app'
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,13 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 
 AUTH_USER_MODEL = 'api.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',  # ВРЕМЕННО!
+    ],
+}

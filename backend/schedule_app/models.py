@@ -1,4 +1,6 @@
 from django.db import models
+from teachers_app.models import Teacher, TeacherSubject  # Импортируем из teachers_app
+
 
 class Subject(models.Model):
     name = models.CharField(max_length=255, verbose_name="Название предмета")
@@ -8,10 +10,9 @@ class Subject(models.Model):
         verbose_name = "Предмет"
         verbose_name_plural = "Предметы"
 
-    
     def __str__(self):
         return self.name
-    
+
 
 class Group(models.Model):
     name = models.CharField(max_length=50, unique=True, verbose_name="Название группы")
@@ -24,7 +25,6 @@ class Group(models.Model):
 
     def __str__(self):
         return self.name
-
 
 
 class Lesson(models.Model):
@@ -56,15 +56,49 @@ class Lesson(models.Model):
     end_time = models.TimeField(verbose_name="Время окончания")
     day = models.IntegerField(choices=DAY_CHOICES, verbose_name="День недели")
     classroom = models.CharField(max_length=50, verbose_name="Аудитория")
-    teacher = models.CharField(max_length=100, blank=True, null=True, verbose_name="Преподаватель")
     group = models.ForeignKey(Group, on_delete=models.CASCADE, verbose_name="Группа")
     week_type = models.CharField(max_length=20, choices=WEEK_TYPE_CHOICES, default='every', verbose_name="Тип недели")
 
+    # СТАРОЕ поле — для миграции (можно удалить позже)
+    teacher_old = models.CharField(max_length=100, blank=True, null=True, verbose_name="Преподаватель (старое)")
+
+    # НОВОЕ поле — правильная связь с teachers_app.Teacher
+
+    teacher = models.ForeignKey(
+        'teachers_app.Teacher',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='lessons',
+        verbose_name="Преподаватель"
+    )
+
+    teachersubject = models.ForeignKey(
+        'teachers_app.TeacherSubject',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='schedule_lessons',
+        verbose_name="Преподаватель + Предмет + Курс"
+    )
+
+    # Опционально: связь с конкретной парой "Преподаватель + Предмет + Курс"
+    teachersubject = models.ForeignKey(
+        TeacherSubject,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='lessons',
+        verbose_name="Преподаватель + Предмет + Курс"
+    )
 
     class Meta:
         verbose_name = "Урок"
         verbose_name_plural = "Уроки"
+        ordering = ['day', 'start_time']
 
     def __str__(self):
-        return f"{self.subject}"
+        teacher_name = self.teacher.get_full_name() if self.teacher else "—"
+        return f"{self.subject} — {teacher_name} ({self.get_type_display()})"
+    
     
