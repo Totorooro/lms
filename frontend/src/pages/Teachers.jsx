@@ -1,35 +1,36 @@
 import { useState, useEffect } from 'react';
-import '../styles/Teachers.css'; // Создай этот файл
+import '../styles/Teachers.css';
 
 const Teachers = () => {
   const [teachers, setTeachers] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  fetch('http://127.0.0.1:8000/api/teachers/teachers/', {  // ← ПОЛНЫЙ URL
-    headers: {
-      'Content-Type': 'application/json',
-    }
-  })
-    .then(res => {
-      if (!res.ok) throw new Error('Ошибка API');
-      return res.json();
+    fetch('http://127.0.0.1:8000/api/teachers/teachers/', {
+      headers: {
+        'Content-Type': 'application/json',
+      }
     })
-    .then(data => {
-      console.log('Данные преподавателей:', data);  // ← ДЛЯ ОТЛАДКИ
-      setTeachers(data);
-      setLoading(false);
-    })
-    .catch(error => {
-      console.error('Ошибка:', error);  // ← ДЛЯ ОТЛАДКИ
-      setLoading(false);
-    });
-}, []);
+      .then(res => {
+        if (!res.ok) throw new Error('Ошибка API');
+        return res.json();
+      })
+      .then(data => {
+        console.log('Данные преподавателей:', data);
+        setTeachers(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Ошибка:', error);
+        setLoading(false);
+      });
+  }, []);
 
   if (loading) return <div className="loading">Загрузка преподавателей...</div>;
 
   return (
-    <div className="teachers-page">
+    // ДОБАВЛЕН КЛАСС — ОТСТУП ОТ SIDEBAR
+    <div className="teachers-page teachers-offset">
       <header className="header">
         <h1>Преподаватели</h1>
         <p className="subtitle">Контакты преподавателей группы ИУ7-71Б</p>
@@ -66,22 +67,22 @@ const Teachers = () => {
               <div className="contacts">
                 {teacher.email && (
                   <div className="contact-item">
-                    <span>Email</span> {teacher.email}
+                    Email {teacher.email}
                   </div>
                 )}
                 {teacher.phone && (
                   <div className="contact-item">
-                    <span>Phone</span> {teacher.phone}
+                    Phone {teacher.phone}
                   </div>
                 )}
                 {teacher.office && (
                   <div className="contact-item">
-                    <span>Office</span> {teacher.office}
+                    Office {teacher.office}
                   </div>
                 )}
                 {teacher.consultation_schedule && (
                   <div className="contact-item">
-                    <span>Clock</span> Консультации: {teacher.consultation_schedule}
+                    Clock Консультации: {teacher.consultation_schedule}
                   </div>
                 )}
               </div>
