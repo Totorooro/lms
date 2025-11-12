@@ -1,35 +1,62 @@
 import { useState, useEffect } from 'react';
 import '../styles/Teachers.css';
+import api from '../api';  // ← ИСПОЛЬЗУЕМ ЕДИНЫЙ api.js
 
 const Teachers = () => {
   const [teachers, setTeachers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);  // ← ДОБАВЛЕНО: обработка ошибок
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/teachers/teachers/', {
-      headers: {
-        'Content-Type': 'application/json',
+    const fetchTeachers = async () => {
+      try {
+        const response = await api.get('/api/teachers/teachers/');  // ← ЧЕРЕЗ api.js!
+        
+        if (!response.data) {
+          throw new Error('Пустой ответ от сервера');
+        }
+
+        console.log('Преподаватели загружены:', response.data);
+        setTeachers(response.data);
+        setLoading(false);
+      } catch (err) {
+        console.error('Ошибка загрузки преподавателей:', err);
+        setError(err.response?.data?.detail || err.message || 'Не удалось загрузить данные');
+        setLoading(false);
       }
-    })
-      .then(res => {
-        if (!res.ok) throw new Error('Ошибка API');
-        return res.json();
-      })
-      .then(data => {
-        console.log('Данные преподавателей:', data);
-        setTeachers(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Ошибка:', error);
-        setLoading(false);
-      });
+    };
+
+    fetchTeachers();
   }, []);
 
-  if (loading) return <div className="loading">Загрузка преподавателей...</div>;
+  // === ЗАГРУЗКА ===
+  if (loading) {
+    return (
+      <div className="teachers-page teachers-offset">
+        <div className="loading">
+          <div className="spinner"></div>
+          <p>Загрузка преподавателей...</p>
+        </div>
+      </div>
+    );
+  }
 
+  // === ОШИБКА ===
+  if (error) {
+    return (
+      <div className="teachers-page teachers-offset">
+        <div className="error">
+          <p>Ошибка: {error}</p>
+          <button onClick={() => window.location.reload()} className="retry-btn">
+            Повторить
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // === ОСНОВНОЙ КОНТЕНТ ===
   return (
-    // ДОБАВЛЕН КЛАСС — ОТСТУП ОТ SIDEBAR
     <div className="teachers-page teachers-offset">
       <header className="header">
         <h1>Преподаватели</h1>
@@ -38,24 +65,40 @@ const Teachers = () => {
 
       <div className="teachers-grid">
         {teachers.length === 0 ? (
-          <p className="no-data">Преподаватели не добавлены</p>
+          <div className="no-data">
+            <p>Преподаватели не добавлены</p>
+          </div>
         ) : (
           teachers.map(teacher => (
             <div key={teacher.id} className="teacher-card">
+              {/* АВАТАР */}
               <div className="avatar">
-                {teacher.last_name[0]}{teacher.first_name[0]}
+                {teacher.last_name?.[0] || '?'}
+                {teacher.first_name?.[0] || '?'}
               </div>
-              <h3>{teacher.last_name} {teacher.first_name} {teacher.middle_name || ''}</h3>
-              <p className="position">{teacher.position || 'Преподаватель'}</p>
-              <p className="department">Кафедра {teacher.department_name || '—'}</p>
 
+              {/* ФИО */}
+              <h3>
+                {teacher.last_name || ''} {teacher.first_name || ''}{' '}
+                {teacher.middle_name || ''}
+              </h3>
+
+              {/* ДОЛЖНОСТЬ */}
+              <p className="position">{teacher.position || 'Преподаватель'}</p>
+
+              {/* КАФЕДРА */}
+              <p className="department">
+                Кафедра {teacher.department_name || '—'}
+              </p>
+
+              {/* ПРЕДМЕТЫ */}
               <div className="subjects">
                 <strong>Предметы:</strong>
                 <div className="subject-tags">
-                  {teacher.subjects.length > 0 ? (
+                  {Array.isArray(teacher.subjects) && teacher.subjects.length > 0 ? (
                     teacher.subjects.map((s, i) => (
                       <span key={i} className="subject-tag">
-                        {s.subject_name}
+                        {s.subject_name || 'Без названия'}
                       </span>
                     ))
                   ) : (
@@ -64,25 +107,32 @@ const Teachers = () => {
                 </div>
               </div>
 
+              {/* КОНТАКТЫ */}
               <div className="contacts">
                 {teacher.email && (
                   <div className="contact-item">
-                    Email {teacher.email}
+                    <strong>Email:</strong>{' '}
+                    <a href={`mailto:${teacher.email}`} className="contact-link">
+                      {teacher.email}
+                    </a>
                   </div>
                 )}
                 {teacher.phone && (
                   <div className="contact-item">
-                    Phone {teacher.phone}
+                    <strong>Телефон:</strong>{' '}
+                    <a href={`tel:${teacher.phone}`} className="contact-link">
+                      {teacher.phone}
+                    </a>
                   </div>
                 )}
                 {teacher.office && (
                   <div className="contact-item">
-                    Office {teacher.office}
+                    <strong>Кабинет:</strong> {teacher.office}
                   </div>
                 )}
                 {teacher.consultation_schedule && (
                   <div className="contact-item">
-                    Clock Консультации: {teacher.consultation_schedule}
+                    <strong>Консультации:</strong> {teacher.consultation_schedule}
                   </div>
                 )}
               </div>

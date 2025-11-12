@@ -8,7 +8,7 @@ function Events() {
   const [events, setEvents] = useState([]);
 
   const fetchEvents = () => {
-    api.get('/api/event/events/')
+    api.get('/api/events/events/')
       .then(res => setEvents(res.data))
       .catch(err => console.error(err));
   };

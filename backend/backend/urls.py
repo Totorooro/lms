@@ -5,7 +5,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include("api.urls")),
     path('api/schedule/', include('schedule_app.urls')),
-    path('api/event/', include('events_app.urls')),
-    path('teachers/', include('teachers_app.urls')),
-    path('api/teachers/', include('teachers_app.urls'))
+    path('api/teachers/', include('teachers_app.urls')),   # ← ДОЛЖНО БЫТЬ!
+    path('api/events/', include('events_app.urls')),
 ]
