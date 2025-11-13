@@ -1,0 +1,107 @@
+[
+{
+  "model": "events_app.event",
+  "pk": 1,
+  "fields": {
+    "title": "Научная конференция \"Инновации в IT\"",
+    "description": "Студенческая научная конференция с презентацией лучших проектов года",
+    "start_date": "2025-11-18",
+    "start_time": "14:00:00",
+    "end_date": "2025-11-18",
+    "end_time": "15:30:00",
+    "location": "Актовый зал, главный корпус",
+    "organizer": "Кафедра ИСАУ",
+    "status": "upcoming",
+    "type_status": "conference",
+    "participants_limit": 100,
+    "current_participants": 2,
+    "groups": [],
+    "participants": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "events_app.event",
+  "pk": 4,
+  "fields": {
+    "title": "День открытых дверей",
+    "description": "Презентация факультета для абитуриентов и их родителей",
+    "start_date": "2025-12-01",
+    "start_time": "14:00:00",
+    "end_date": "2025-12-01",
+    "end_time": "15:30:00",
+    "location": "Холл главного корпуса",
+    "organizer": "Приемная комиссия",
+    "status": "upcoming",
+    "type_status": "cultural",
+    "participants_limit": 0,
+    "current_participants": 0,
+    "groups": [],
+    "participants": []
+  }
+},
+{
+  "model": "events_app.event",
+  "pk": 5,
+  "fields": {
+    "title": "Турнир по волейболу",
+    "description": "Межгрупповой турнир по волейболу среди студентов",
+    "start_date": "2025-11-26",
+    "start_time": "10:00:00",
+    "end_date": "2025-11-27",
+    "end_time": "18:00:00",
+    "location": "Спортивный зал",
+    "organizer": "Кафедра физвоспитания",
+    "status": "upcoming",
+    "type_status": "sport",
+    "participants_limit": 80,
+    "current_participants": 0,
+    "groups": [],
+    "participants": []
+  }
+},
+{
+  "model": "events_app.event",
+  "pk": 6,
+  "fields": {
+    "title": "Чемпионат по программированию",
+    "description": "Внутривузовский чемпионат по спортивному программированию",
+    "start_date": "2025-11-20",
+    "start_time": "11:00:00",
+    "end_date": "2025-11-20",
+    "end_time": "18:00:00",
+    "location": "Компьютерный класс №3",
+    "organizer": "Студенческий совет",
+    "status": "upcoming",
+    "type_status": "competition",
+    "participants_limit": 50,
+    "current_participants": 0,
+    "groups": [],
+    "participants": []
+  }
+},
+{
+  "model": "events_app.event",
+  "pk": 7,
+  "fields": {
+    "title": "Мастер-класс по React",
+    "description": "Практический семинар по разработке современных веб-приложений",
+    "start_date": "2025-12-10",
+    "start_time": "14:00:00",
+    "end_date": "2025-12-29",
+    "end_time": "18:00:00",
+    "location": "ауд. 501",
+    "organizer": "Кафедра ИСАУ",
+    "status": "upcoming",
+    "type_status": "courses",
+    "participants_limit": 30,
+    "current_participants": 0,
+    "groups": [
+      1
+    ],
+    "participants": []
+  }
+}
+]
