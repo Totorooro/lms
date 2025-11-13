@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'schedule_app',
     'events_app',
+    'Homework_app',
 ]
 
 MIDDLEWARE = [
