@@ -1,0 +1,24 @@
+[
+{
+  "model": "journal_app.grade",
+  "pk": 1,
+  "fields": {
+    "value": 5.0,
+    "date": "2025-11-12",
+    "subject": 1,
+    "student": 3,
+    "comment": "ты крутой \\\r\nаава"
+  }
+},
+{
+  "model": "journal_app.grade",
+  "pk": 2,
+  "fields": {
+    "value": 2.0,
+    "date": "2025-11-13",
+    "subject": 1,
+    "student": 3,
+    "comment": "ты плох"
+  }
+}
+]
