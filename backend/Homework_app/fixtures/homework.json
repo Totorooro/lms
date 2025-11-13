@@ -1,0 +1,44 @@
+[
+{
+  "model": "Homework_app.homework",
+  "pk": 1,
+  "fields": {
+    "title": "sdfgsdf",
+    "description": "dfgdfgdsdf",
+    "due_date": "2025-11-28",
+    "due_time": "06:00:00",
+    "subject": 1,
+    "group": 2,
+    "assigned_by": 1,
+    "status": "pending"
+  }
+},
+{
+  "model": "Homework_app.homework",
+  "pk": 2,
+  "fields": {
+    "title": "Научиться бить нижнюю подачу",
+    "description": "Научиться бить нижнюю подачу",
+    "due_date": "2025-11-13",
+    "due_time": "06:00:00",
+    "subject": 7,
+    "group": 2,
+    "assigned_by": 1,
+    "status": "urgent"
+  }
+},
+{
+  "model": "Homework_app.homework",
+  "pk": 3,
+  "fields": {
+    "title": "Построить таблицы истинности для логических выражений.",
+    "description": "Построить таблицы истинности для логических выражений.",
+    "due_date": "2025-09-17",
+    "due_time": "16:24:57",
+    "subject": 1,
+    "group": 2,
+    "assigned_by": 1,
+    "status": "overdue"
+  }
+}
+]
