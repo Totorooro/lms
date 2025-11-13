@@ -8,7 +8,4 @@ class ExamViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        user_group = self.request.user.group if hasattr(self.request.user, 'group') and self.request.user.group else None
-        if not user_group:
-            return Exam.objects.none()
-        return Exam.objects.filter(group=user_group).order_by('date', 'time')
+        return Exam.objects.all().order_by('date', 'time')

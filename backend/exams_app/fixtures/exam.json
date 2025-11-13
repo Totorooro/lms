@@ -1,0 +1,30 @@
+[
+{
+  "model": "exams_app.exam",
+  "pk": 1,
+  "fields": {
+    "subject": 1,
+    "group": 1,
+    "teacher": "Митина Т.В.",
+    "exam_type": "exam",
+    "date": "2025-11-13",
+    "time": "19:28:50",
+    "location": "1-308",
+    "description": ""
+  }
+},
+{
+  "model": "exams_app.exam",
+  "pk": 2,
+  "fields": {
+    "subject": 1,
+    "group": 2,
+    "teacher": "Митина Т.В.",
+    "exam_type": "exam",
+    "date": "2025-11-13",
+    "time": "19:29:53",
+    "location": "4-315",
+    "description": ""
+  }
+}
+]
