@@ -24,6 +24,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+cache/
+*.cache
 
 
 # Editor directories and files
