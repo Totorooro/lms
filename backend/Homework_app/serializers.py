@@ -4,4 +4,4 @@ from .models import Homework
 class HomeworkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Homework
-        fields = 'all'
+        fields = '__all__'
