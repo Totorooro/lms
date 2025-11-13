@@ -7,4 +7,5 @@ urlpatterns = [
     path('api/schedule/', include('schedule_app.urls')),
     path('api/event/', include('events_app.urls')),
     path('api/homework/', include('Homework_app.urls')),
+    path('api/journal/', include('journal_app.urls')),
 ]
