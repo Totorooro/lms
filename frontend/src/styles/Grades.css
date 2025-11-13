@@ -1,0 +1,84 @@
+/* src/styles/Grades.css */
+.grades-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 220px;
+  overflow-y: auto;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.overall-stats {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.overall-stats h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.overall-stats p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.subjects-performance h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.subject-block {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subject-block h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.subject-block p {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.fill {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
