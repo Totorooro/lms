@@ -1,0 +1,41 @@
+[
+{
+  "model": "teachers_app.teacher",
+  "pk": 1,
+  "fields": {
+    "full_name": "Орлов Кирилл Андреевич",
+    "position": "Доцент",
+    "department": "Раздолбайства и Кайфа",
+    "email": "",
+    "phone": "",
+    "office": "",
+    "consultation_hours": ""
+  }
+},
+{
+  "model": "teachers_app.teacher",
+  "pk": 2,
+  "fields": {
+    "full_name": "Митина Т.В.",
+    "position": "Доцент",
+    "department": "Кайфа",
+    "email": "",
+    "phone": "",
+    "office": "",
+    "consultation_hours": ""
+  }
+},
+{
+  "model": "teachers_app.teacher",
+  "pk": 3,
+  "fields": {
+    "full_name": "Журавлева О.Д.",
+    "position": "Магистр",
+    "department": "Математики",
+    "email": "",
+    "phone": "",
+    "office": "",
+    "consultation_hours": ""
+  }
+}
+]
