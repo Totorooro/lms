@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'schedule_app',
     'events_app',
     'Homework_app',
+    'journal_app',
 ]
 
 MIDDLEWARE = [
